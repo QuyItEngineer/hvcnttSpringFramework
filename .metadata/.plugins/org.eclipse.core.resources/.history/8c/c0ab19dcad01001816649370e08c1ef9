@@ -1,0 +1,18 @@
+package day7;
+
+import runningApplication.ApplicationRunningInterface;
+
+public class MainAppDay7 implements ApplicationRunningInterface{
+
+	public static void main(String[] args) {
+		
+
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

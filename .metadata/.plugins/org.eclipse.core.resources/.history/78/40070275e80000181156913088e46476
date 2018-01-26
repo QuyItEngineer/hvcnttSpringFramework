@@ -1,0 +1,19 @@
+package projectSinceDay2;
+
+import java.util.Date;
+
+public class SwimmingPool {
+
+	private String nameSwimmingPool;
+	private Date timeOpenSwimmingPool;
+	private Employee employee;
+	
+	public SwimmingPool(Employee employee) {
+		this.employee = employee;
+	}
+	
+	
+	public void printSwimmingPool() {
+		System.out.println("");
+	}
+}

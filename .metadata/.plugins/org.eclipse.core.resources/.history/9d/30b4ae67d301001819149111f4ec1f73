@@ -1,0 +1,28 @@
+package day8;
+
+import java.util.List;
+
+public class Resort {
+	private String nameResort;
+	private String nameCustomer;
+	
+	public Resort() {
+	}
+
+	public String getNameResort() {
+		return nameResort;
+	}
+
+	public void setNameResort(String nameResort) {
+		this.nameResort = nameResort;
+	}
+
+	public String getNameCustomer() {
+		return nameCustomer;
+	}
+
+	public void setNameCustomer(String nameCustomer) {
+		this.nameCustomer = nameCustomer;
+	}
+
+}

@@ -1,0 +1,55 @@
+package day6;
+
+import java.util.Date;
+
+public class SwimmingPool {
+
+	private String nameSwimmingPool;
+	private Date timeOpenSwimmingPool;
+	private Employee employee;
+	
+	public SwimmingPool(Employee employee) {
+		this.employee = employee;
+	}
+	public SwimmingPool(String name, Date timeOpen,Employee employee) {
+		this.setNameSwimmingPool(name);
+		this.setTimeOpenSwimmingPool(timeOpen);
+		this.employee = employee;
+	}
+	
+	public String getNameSwimmingPool() {
+		return nameSwimmingPool;
+	}
+
+
+	public void setNameSwimmingPool(String nameSwimmingPool) {
+		this.nameSwimmingPool = nameSwimmingPool;
+	}
+
+
+	public Date getTimeOpenSwimmingPool() {
+		return timeOpenSwimmingPool;
+	}
+
+
+	public void setTimeOpenSwimmingPool(Date timeOpenSwimmingPool) {
+		this.timeOpenSwimmingPool = timeOpenSwimmingPool;
+	}
+
+
+	public Employee getEmployee() {
+		return employee;
+	}
+
+
+	public void setEmployee(Employee employee) {
+		this.employee = employee;
+	}
+
+
+	public void printSwimmingPool() {
+		System.out.println("Name: "+this.getNameSwimmingPool()+".\n"
+				+"Time Open: "+this.getTimeOpenSwimmingPool()+".\n"
+				+this.employee.getInfomationEmployee());
+	}
+}

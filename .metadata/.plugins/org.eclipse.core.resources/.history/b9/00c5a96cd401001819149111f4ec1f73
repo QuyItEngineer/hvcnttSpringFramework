@@ -1,0 +1,31 @@
+package day8;
+
+
+public class Resort {
+	private String nameResort;
+	private String nameCustomer;
+	
+	public Resort() {
+	}
+
+	public String getNameResort() {
+		return nameResort;
+	}
+
+	public void setNameResort(String nameResort) {
+		this.nameResort = nameResort;
+	}
+
+	public String getNameCustomer() {
+		return nameCustomer;
+	}
+
+	public void setNameCustomer(String nameCustomer) {
+		this.nameCustomer = nameCustomer;
+	}
+	
+	public void printNameCustomer() {
+		System.out.println("Name Customer: "+this.getNameCustomer());
+	}
+
+}
