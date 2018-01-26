@@ -1,0 +1,9 @@
+package day8;
+
+import java.util.List;
+
+public class Resort {
+	private String nameResort;
+	private List<Customer> customer;
+
+}

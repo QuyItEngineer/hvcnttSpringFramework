@@ -1,0 +1,41 @@
+package day8;
+
+import java.util.List;
+
+public class Resort {
+	private String nameResort;
+	private String nameCustomer;
+	private List<Customer> customer;
+	
+	public Resort() {
+	}
+
+	public String getNameResort() {
+		return nameResort;
+	}
+
+	public void setNameResort(String nameResort) {
+		this.nameResort = nameResort;
+	}
+
+	public String getNameCustomer() {
+		return nameCustomer;
+	}
+
+	public void setNameCustomer(String nameCustomer) {
+		this.nameCustomer = nameCustomer;
+	}
+	
+	public List<Customer> getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(List<Customer> customer) {
+		this.customer = customer;
+	}
+
+	public void printNameCustomer() {
+		System.out.println("Name Customer: "+this.getNameCustomer());
+	}
+
+}

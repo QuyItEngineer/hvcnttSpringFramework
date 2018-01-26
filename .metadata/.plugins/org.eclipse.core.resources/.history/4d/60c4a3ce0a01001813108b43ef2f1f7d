@@ -1,0 +1,19 @@
+package day1;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainAppDay1 {
+
+	public static void main(String[] args) {
+		ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+		HelloWorld objA = (HelloWorld) context.getBean("helloWorld");
+        HelloWorld objB = (HelloWorld) context.getBean("helloWorld");
+        System.out.println(" ---- day 2: Inject Simple Value --------");
+        objB.printHello();
+        objA.setMessage("I'm object A");
+        objA.printHello();
+
+	}
+
+}

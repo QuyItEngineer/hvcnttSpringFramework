@@ -1,0 +1,15 @@
+package projectSinceDay2;
+
+public class SwimmingPool {
+
+	private Employee employee;
+	
+	public SwimmingPool(Employee employee) {
+		this.employee = employee;
+	}
+	
+	
+	public void printSwimmingPool() {
+		
+	}
+}

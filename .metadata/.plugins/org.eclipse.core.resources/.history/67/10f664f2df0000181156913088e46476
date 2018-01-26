@@ -1,0 +1,26 @@
+package projectSinceDay2;
+
+import java.util.Date;
+
+public class Order implements Payment{
+	private int totalDate;
+	private Date dateOutOrder;
+	public int getTotalDate() {
+		return totalDate;
+	}
+	public void setTotalDate(int totalDate) {
+		this.totalDate = totalDate;
+	}
+	public Date getDateOutOrder() {
+		return dateOutOrder;
+	}
+	public void setDateOutOrder(Date dateOutOrder) {
+		this.dateOutOrder = dateOutOrder;
+	}
+	@Override
+	public float billCustomerPayment() {
+		
+		return this.totalDate*50000;
+	}	
+	
+}

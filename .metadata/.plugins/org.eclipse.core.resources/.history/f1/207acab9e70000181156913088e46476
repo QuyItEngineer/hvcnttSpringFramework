@@ -1,0 +1,8 @@
+package projectSinceDay2;
+
+public class SwimmingPool {
+
+	public void printSwimmingPool() {
+		
+	}
+}

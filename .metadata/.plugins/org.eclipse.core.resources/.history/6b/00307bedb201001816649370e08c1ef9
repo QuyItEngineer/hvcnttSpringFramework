@@ -1,0 +1,17 @@
+package day6;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+
+public class MainAppDay6 {
+
+	public static void main(String[] args) {
+		ApplicationContext context = new ClassPathXmlApplicationContext("beans_day6_p_namespace.xml");
+		SwimmingPool swimmingPool = (SwimmingPool)context.getBean("swimming");
+		System.out.println("--------- Day 6: P -------------");
+		swimmingPool.printSwimmingPool();
+
+	}
+
+}

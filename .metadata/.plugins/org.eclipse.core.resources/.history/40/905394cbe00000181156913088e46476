@@ -1,0 +1,8 @@
+package projectSinceDay2;
+
+public class Payment {
+	private Order order;
+	public void printCustomerPayment (Order order) {
+		
+	}
+}

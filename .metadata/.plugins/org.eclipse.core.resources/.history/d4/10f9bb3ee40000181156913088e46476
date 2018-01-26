@@ -1,0 +1,12 @@
+package projectSinceDay2;
+
+public class Payment {
+	private Order order;
+	public Payment(Order order) {
+		this.order=order;
+	}
+	public void printCustomerPayment () {
+		
+		System.out.println("Money of Bill: "+this.order.getTotalDate()+" USD.");
+	}
+}

@@ -1,0 +1,6 @@
+package projectSinceDay2;
+
+public interface Payment {
+	public void printCustomerPayment ();
+	}
+}

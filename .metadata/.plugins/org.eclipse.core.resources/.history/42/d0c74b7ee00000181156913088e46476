@@ -1,0 +1,7 @@
+package projectSinceDay2;
+
+public class Payment {
+	public void printCustomerPayment () {
+		
+	}
+}
