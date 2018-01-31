@@ -1,5 +1,0 @@
-package runningApplication;
-
-public interface ApplicationRunningInterface {
-	public static void run();
-}

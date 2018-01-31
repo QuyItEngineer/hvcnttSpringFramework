@@ -7,7 +7,7 @@ import java.util.List;
 public class Resort {
 	private String nameResort;
 	private String nameCustomer;
-	private List<Customer> customer;
+	private List<CustomerVip> customer;
 	
 	public Resort() {
 	}
@@ -28,11 +28,11 @@ public class Resort {
 		this.nameCustomer = nameCustomer;
 	}
 	
-	public List<Customer> getCustomer() {
+	public List<CustomerVip> getCustomer() {
 		return customer;
 	}
 
-	public void setCustomer(List<Customer> customer) {
+	public void setCustomer(List<CustomerVip> customer) {
 		this.customer = customer;
 	}
 
@@ -41,7 +41,7 @@ public class Resort {
 	}
 	@Override
 	public String toString() {
-		Iterator<Customer> customerList = customer.iterator();
+		Iterator<CustomerVip> customerList = customer.iterator();
 		String printCustomerInResort = null;
 		while (customerList.hasNext()) {
 			printCustomerInResort += customerList.next().toString()+". \n";	

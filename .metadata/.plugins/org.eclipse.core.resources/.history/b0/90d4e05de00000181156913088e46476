@@ -1,6 +1,0 @@
-package projectSinceDay2;
-
-public interface Payment {
-	public float billCustomerPayment ();
-	
-}

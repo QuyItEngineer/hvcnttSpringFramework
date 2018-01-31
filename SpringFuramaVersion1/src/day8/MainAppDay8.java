@@ -15,9 +15,9 @@ public class MainAppDay8 implements ApplicationRunningInterface{
 	@Override
 	public void run() {
 		ApplicationContext context = new ClassPathXmlApplicationContext("beans_day8_spel.xml");
-		Resort resort = (Resort) context.getBean("resortList");
+		CustomerVip customervip = (CustomerVip) context.getBean("customervip");
 		System.out.println("-------- day 8: Spring Expression SpEL ------");
-		resort.printCustomer();
+		customervip.printCustomer();
 	}
 
 }

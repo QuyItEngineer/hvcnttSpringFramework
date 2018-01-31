@@ -2,50 +2,35 @@ package day8;
 
 public class Customer {
 	private String nameCustomer;
-	private int ageCustomer;
-	private String sexCustomer;
-	private int idCustomer;
-	
+	private int  moneyOfCustomer;
+	private String addressCustomer;
+	private boolean vip;
 	public Customer() {
-	
+		// TODO Auto-generated constructor stub
 	}
-
 	public String getNameCustomer() {
 		return nameCustomer;
 	}
-
 	public void setNameCustomer(String nameCustomer) {
 		this.nameCustomer = nameCustomer;
 	}
-
-	public int getAgeCustomer() {
-		return ageCustomer;
+	public int getMoneyOfCustomer() {
+		return moneyOfCustomer;
 	}
-
-	public void setAgeCustomer(int ageCustomer) {
-		this.ageCustomer = ageCustomer;
+	public void setMoneyOfCustomer(int moneyOfCustomer) {
+		this.moneyOfCustomer = moneyOfCustomer;
 	}
-
-	public String getSexCustomer() {
-		return sexCustomer;
+	public String getAddressCustomer() {
+		return addressCustomer;
 	}
-
-	public void setSexCustomer(String sexCustomer) {
-		this.sexCustomer = sexCustomer;
+	public void setAddressCustomer(String addressCustomer) {
+		this.addressCustomer = addressCustomer;
 	}
-
-	public int getIdCustomer() {
-		return idCustomer;
+	public boolean isVip() {
+		return vip;
 	}
-
-	public void setIdCustomer(int idCustomer) {
-		this.idCustomer = idCustomer;
+	public void setVip(boolean vip) {
+		this.vip = vip;
 	}
-	@Override
-	public String toString() {
-		return "Name: "+this.getNameCustomer()+".\n"
-		+"Age: "+this.getAgeCustomer()+".\n"
-		+"Id: "+this.getIdCustomer()+".\n";
-	}
-
+	
 }
