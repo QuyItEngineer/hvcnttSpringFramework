@@ -1,6 +1,7 @@
 package day9;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import runningApplication.ApplicationRunningInterface;
@@ -15,17 +16,14 @@ public class MainAppDay9 implements ApplicationRunningInterface{
 	@Override
 	public void run() {
 		ApplicationContext context = new ClassPathXmlApplicationContext("beans_day9_beanscope.xml");
-		Customer customer1 = (Customer) context.getBean("customer");
 		System.out.println("-------- day 9: Scope Bean ------");
-		customer1.setMassage("Hello...");
-		customer1.init();
+		Customer customer1 = (Customer) context.getBean("customer");
+		customer1.setMassage("Mr. Quy created.");
 		customer1.getMassage();
-		customer1.destroy();
 		System.out.println("   -------------");
 		Customer customer2 = (Customer) context.getBean("customer");
-		customer2.init();
 		customer2.getMassage();
-		customer2.destroy();
+		((AbstractApplicationContext) context).close();
 	}
 
 }

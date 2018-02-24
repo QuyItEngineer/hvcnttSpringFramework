@@ -4,9 +4,14 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+        
+	<context:annotation-config />
 
-	<bean id="customer" class="day9.Customer" scope="singleton" init-method="init" destroy-method="destroy">
+	<bean id="visa" class="day14.Visa" >
 	</bean>
-	<!-- "prototype" init-method="init" destroy-method="destroy" -->
+	<bean id="master" class="day14.Master" >
+	</bean>
+	<bean id="payment" class="day14.Payment">
+	</bean>
 
 </beans>

@@ -5,8 +5,11 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
-	<bean id="customer" class="day9.Customer" scope="singleton" init-method="init" destroy-method="destroy">
+	<bean id="visa" class="day11.Visa" scope="singleton">
 	</bean>
-	<!-- "prototype" init-method="init" destroy-method="destroy" -->
+	<bean id="master" class="day11.Master" scope="singleton">
+	</bean>
+	<bean id="payment" class="day11.Payment" autowire="byType">
+	</bean>
 
 </beans>

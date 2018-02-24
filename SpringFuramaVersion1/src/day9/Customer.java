@@ -19,10 +19,9 @@ public class Customer {
 	
 	public void init() {
 		System.out.println("begin...");
-		System.out.println(getMassage());
 	}
 	
 	public void destroy() {
-		System.out.println("finish.");
+		System.out.println("Bean destroying.");
 	}
 }

@@ -33,4 +33,8 @@ public class Customer {
 		this.vip = vip;
 	}
 	
+	public void printVipCustomer() {
+		System.out.println("VIP");
+	}
+	
 }

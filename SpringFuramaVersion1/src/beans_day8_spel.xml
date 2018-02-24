@@ -7,14 +7,14 @@
 
 	<bean id="customer" class="day8.Customer">
 		<property name="nameCustomer" value="Customer Vip1"></property>
-		<property name="moneyOfCustomer" value="#{90}"></property>
+		<property name="moneyOfCustomer" value="#{500+500}"></property>
 		<property name="addressCustomer" value="123 Hai Ba trung."></property>
-		<property name="vip" value="#{customer.moneyOfCustomer > 1000 ? 'false' : 'true'}"></property>
+		<property name="vip" value="#{customer.moneyOfCustomer > 1000 ? 'true' : 'false'}"></property>
 	</bean>
 
 	<bean id="customervip" class="day8.CustomerVip">
 		<property name="isVip" value="#{customer.moneyOfCustomer > 1000 ? 'true' : 'false'}"></property>
 		<property name="isValidPhoneNumber" value="#{'012345678' matches '\d+'}"></property>
-		<property name="isDiscount" value="#{(customer.moneyOfCustomer > 1000) or (customer.vip == false)}"></property>
+		<property name="isDiscount" value="#{(customer.moneyOfCustomer > 1000) or (customer.vip == true)}"></property>
 	</bean>
 </beans>
